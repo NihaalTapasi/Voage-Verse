@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyageVerse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 
+    1. Navigation Bar    
+    2. Image
+    3. Places
+    4. Credits, info, contact
+    -->
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./images/channels4_profile-removebg-preview.png" alt="VoyageVerse Logo">
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="wishlist-link">Wishlist</a>
+                    <div class="dropdown-menu">
+                      <ul style="flex-direction: column;" class="box">
+                        <!-- <li><a href="#">New York City, NY</a></li> -->
+                      </ul>
+                    </div>
+                </li>
+                <li><a href="#" class="weather">Weather Report</a></li>
+                <li><a href="#" class="currency">Currency Convertor</a></li>
+                <li><a href="./signup/signup.html" class="s btn">SignUp</a></li>
+                <li><a href="./login/index.html" class="l btn">LogIn</a></li>
+                <li><a href="./logout/logout.html" class="u btn" style="display: none;">User: </a></li>
+            </ul>
+        </nav>
+
+    <section class="hero">
+        <div class="background-image">
+            <h1>Explore the World with VoyageVerse</h1>
+            <p>Create your travel wishlist</p>
+            <p> check weather updates, and much more.</p>
+        </div>
+    </section>
+    <section class="destination-section">
+        <h2 class="section-title">Explore Popular Destinations</h2>
+        <div class="destination-container">
+            <div class="destination-card">
+                <img src="./images/new-york-cityny_1920x1312-820x656.jpg" alt="New York City, NY" class="card-image" />
+                <div class="card-content">
+                    <h3 class="card-title">New York City, NY</h3>
+                    <p class="card-description">
+                        This is your starting point. Escape the city and head to the quiet New England for a relaxing beach adventure.
+                    </p>
+                    <a href="#" class="card-button">View Destination</a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="destination-card">
+                <img src="./images/mysticct_1920x1312-820x656.jpg" alt="Mystic, CT" class="card-image" />
+                <div class="card-content">
+                    <h3 class="card-title">Mystic, CT</h3>
+                    <p class="card-description">
+                        This historic spot has one of the best coastlines around. Head to main street and grab gifts at Bank Square Books.
+                    </p>
+                    <a href="#" class="card-button">View Destination</a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="destination-card">
+                <img src="./images/licensed-image.jpeg" alt="Rhode Island" class="card-image" />
+                <div class="card-content">
+                    <h3 class="card-title">Rhode Island</h3>
+                    <p class="card-description">
+                        Discover the coastal charm of Rhode Island. Visit scenic beaches and experience its rich history.
+                    </p>
+                    <a href="#" class="card-button">View Destination</a>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+<script type="module" src="./javascript.js"></script>
+<script type="module" src='./wishlist/wishlist.js'></script>
+
+</body>
+</html>

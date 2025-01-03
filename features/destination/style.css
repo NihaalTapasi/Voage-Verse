@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 600;;
+}
+
+.logo img {
+    width: 100px; /* Adjust width to desired size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px 0; /* Add spacing if necessary */
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top:0; 
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+}
+
+ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    color: #333;
+}
+a:hover{
+    color: #007BFF;
+}
+
+.btn {
+    color: white !important;
+    background-color: #0b57d0; /* Blue background */
+    border: 2px solid white;
+    font-size: 1rem;
+    border-radius: 100px;
+    padding: 8px 16px; /* Adjust padding for balance */
+    display: inline-block; /* Allows proper padding and centering */
+    margin-bottom: 10px; /* Add bottom margin */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.btn:hover {
+    background-color: #084298; /* Slightly darker blue on hover */
+    color: #fff; /* Maintain white text on hover */
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    align-items: center; 
+}
+
+.dropdown {
+    position: relative;
+}
+  
+  
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 10;
+ 
+}
+  
+  .dropdown-menu ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-menu ul li {
+    padding: 8px 16px;
+  }
+  
+  .dropdown-menu ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu ul li a:hover {
+    color: #007BFF;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu:hover {
+    display: block;
+    flex-direction: column;
+}
+
+.dropdown-menu ul li {
+    padding: 10px;
+}
+element.style {
+    flex-direction: column;
+    display: flex;
+}
+.box{
+    width: 200px;
+
+}
+
+/* Wheather Report  */
+
+body{
+    background: url("../slides/images/new-york-cityny_1920x1312-820x656.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255,255,255,0.75);
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100dvh;
+    background: rgb(0,0,0,.15); /* r g b = 0  alpha = 0,15 i.e opacity */
+    backdrop-filter: blur(10px);
+}
+
+/* Utilities */
+.regular-txt{
+    font-weight: 400;;
+}
+
+.main-container{
+    width: 300px;
+    height: 420px;
+    z-index: 1;
+    background: linear-gradient(to top, rgb(0,0,0,.15), rgb(255,255,255,0.15));
+    border-radius: 15px;
+    backdrop-filter: blur(100px);
+    padding: 20px;
+}
+
+.city-input{
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 90px;
+    border: 3px solid transparent;
+    background-color: rgb(0,0,0,.15);
+    outline: none;
+    font-weight: 500;
+    transition: 0.25s border;
+    /* making sure text does not exceed the icon */
+    padding-right:40px;
+    color: rgb(255,255,255,0.75);
+}
+.city-input:focus{
+    /* when clicked on the input bar it highlights the border */
+    border: 3px solid rgb(0,0,0,.15);
+}
+.city-input::placeholder{
+    color: rgb(255,255,255,0.75)
+}
+
+.input-container{
+    position: relative;/* if not relative then it will become very diffcult */
+    margin-bottom: 25px;
+}
+.search-btn{
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    display: flex;
+    cursor: pointer;
+}
+
+/* End Input section */
+/* Section : whether info */
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+.location-date-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-summary-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.weather-summary-img{
+
+    width: 120px;
+    height: 120px;
+}
+.weather-summary-info{
+    text-align: right;
+}
+.weather-conditions-container{
+    display: flex;
+    justify-content: space-between;
+} 
+.condition-item{
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.condition-item span{
+    font-size: 30px;
+}
+
+.forcast-items-container{
+    display: flex;
+    gap: 15px;
+    overflow: scroll;
+    padding-bottom:20px ;
+    margin-top: 15px;
+}
+
+
+.forcast-item{
+    min-width: 70px;
+    background-color: rgb(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s background;
+}
+.forcast-item:hover{
+    background-color: rgb(255,255,255,.15);
+}
+.forcast-item-img{
+    width: 35px;
+    height: 35px;
+}
+
+/* End section : whether info */
+
+/* Section: message  */
+.section-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.search-img{
+    height: 180px;
+    width: fit-content;
+    /* transform: translateX(-30px); */
+}
+/* End section: message  */

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="banner" >
+        <div class="logo"> <img src="../../images/channels4_profile-removebg-preview.png"></div>
+        <img src="../" alt="">
+        <div class="nav-links">
+            <ul class="ul">
+                <li class="dropdown">
+                    <a href="#" class="wishlist-link">Wishlist</a>
+                    <div class="dropdown-menu">
+                      <ul style="flex-direction: column;" class="box">
+                        <li><a href="#">New York City, NY</a></li>
+                      </ul>
+                    </div>
+                </li>
+                <li><a href="#">Wheater Report</a></li>
+                <li><a href="#">Reviews</a></li>
+                <a href="signup" class="s btn">Sigin Up</a>
+                <a href="logIn" class="l btn">Login In</a>
+            </ul>
+        </div>
+    </div>
+
+
+    <main class="main-container">
+        <header class="input-container">
+            <input placeholder="Search City" class="city-input">
+            <button class="search-btn">
+                <span class="material-symbols-outlined">search</span>
+            </button>
+        </header>
+
+        <section class="weather-info" style="display: none;">
+            <div class="location-date-container">
+                <div class="location">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <h4 class="contry-txt">New York City</h4>
+                </div>
+                <h5 class="current-date-txt regular-txt">Fri, 03 Jan</h5>
+            </div>
+            <div class="weather-summary-container">
+                <img src="./weather/cloudy.png" alt="" class="weather-summary-img">
+
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt">25℃</h1>
+                    <h3 class="conditin-txt regular-txt">Clouds</h3>
+                </div>
+            </div>
+
+            <div class="weather-conditions-container">
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Humidity</h5>
+                        <h5 class="humidity-value-txt">55%</h5>
+                    </div>
+                </div>
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Wind Speed</h5>
+                        <h5 class="wind-value-txt">2 m/s</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="forcast-items-container">
+                <div class="forcast-item">
+                    <h5 class="forcast-item-date regular-txt"> 05 Aug</h5>
+                    <img src="./weather/thunderstorms.png" class="forcast-item-img">
+                    <h5 class="forcast-item-temp">29°C</h5>
+                </div>
+                <div class="forcast-item">
+                    <h5 class="forcast-item-date regular-txt"> 05 Aug</h5>
+                    <img src="./weather/thunderstorms.png" class="forcast-item-img">
+                    <h5 class="forcast-item-temp">29°C</h5>
+                </div>
+                <div class="forcast-item">
+                    <h5 class="forcast-item-date regular-txt"> 05 Aug</h5>
+                    <img src="./weather/thunderstorms.png" class="forcast-item-img">
+                    <h5 class="forcast-item-temp">29°C</h5>
+                </div>
+                <div class="forcast-item">
+                    <h5 class="forcast-item-date regular-txt"> 05 Aug</h5>
+                    <img src="./weather/thunderstorms.png" class="forcast-item-img">
+                    <h5 class="forcast-item-temp">29°C</h5>
+                </div>
+            </div>
+        </section>
+        <section class="search-city section-message">
+            <img src="./weather/image-removebg.png" class="search-img" alt="">
+             <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather condition of the city
+                </h4>
+             </div>
+        </section>
+        <section class="not-found section-message" style="display: none;">
+            <img src="./weather/image-removebg-preview.png" class="search-img" alt="">
+             <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather condition of the city
+                </h4>
+             </div>
+        </section>
+    </main>
+    <script src="./search.js"></script>
+
+</body>
+</html>
